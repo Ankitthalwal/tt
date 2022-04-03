@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200;1,600&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.sidebar {
+    position: absolute;
+    background-color:salmon;
+    font-family: 'Poppins', sans-serif;
+
+    /* background-color: red;  we used background for only design use*/
+    /* width: 200px; we use 200px so nav menu can not come outside during responsive  */
+    height: 110vh;
+    transition: transform 0.3s ease-in;
+
+}
+
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    font-size: 20px;
+    padding: 25px 0;
+    list-style: none;
+
+}
+.container a:hover{
+
+     color:white; 
+    
+    transition: 0.3s;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+    /*by using flex the content come in row form  */
+}
+
+.info {
+    /* background-color:pink; */
+    height: 68vh;
+    width: 80vw;
+    margin: 74px auto;
+    /* making pink box in centre of page  */
+    /* display flex and justify content is used to separate pic one side right and content into another side left */
+    display: flex;
+    justify-content: space-around;
+    /* display flex and justify content is used to separate pic one side right and content into another side left */
+
+}
+
+.devpic img {
+    height: 68vh;
+    position: relative;
+    top: 80px;
+    left: 150px;
+    /* acording to info height */
+}
+
+.devinfo {
+    padding-top: 50px;
+    display: flex;
+    /* align-items: center;  if you want to text in straight or row form*/
+    justify-content: center;
+    /* justify content and flex colum is used to centre element and in colum form which align item can't do with flex direction  */
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hello {
+    font-size: 45px;
+}
+
+.name {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+.about {
+    font-size: 30px;
+}
+
+.button {
+    margin-top: 24px;
+}
+
+.button button {
+    padding: 9px 14px;
+    cursor: pointer;
+    border-radius: 22px;
+    background-color: blueviolet;
+    color: white;
+    margin: 0 3px;
+}
+
+.button button:hover {
+    background-color: white;
+    color: black;
+}
+
+.moreabout {
+    font-size: 22px;
+}
+.container1{
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+}
+
+
+
+@media (max-width:385px) {
+    .devpic img {
+        height: 14vh;
+        /* acording to info height */
+        position: absolute;
+        left: 110px;
+        top: 70px;
+        border-radius: 50rem;
+    }
+
+
+.devinfo {
+    padding-top: 50px;
+    display: flex;
+    /* align-items: center;  if you want to text in straight or row form*/
+    justify-content: center;
+    /* justify content and flex colum is used to centre element and in colum form which align item can't do with flex direction  */
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hello {
+    font-size: 35px;
+}
+
+.name {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+.about {
+    font-size: 25px;
+}
+
+
+
+.moreabout {
+    font-size: 17px;
+}
+    .container1{
+        position: fixed;
+        left: 100px;
+        bottom: 50px;
+        
+    }
+   
+    
+}
+@media (max-width:415px) {
+    .devpic img {
+        height: 14vh;
+        /* acording to info height */
+        position: absolute;
+        left: 110px;
+        top: 85px;
+        border-radius: 50rem;
+    }
+    .container1{
+        position: fixed;
+        left: 100px;
+        bottom: 110px;
+        
+    }
+   
+    .devinfo {
+        padding-top: 110px;
+        display: flex;
+        /* align-items: center;  if you want to text in straight or row form*/
+        justify-content: center;
+        /* justify content and flex colum is used to centre element and in colum form which align item can't do with flex direction  */
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+
+.hello {
+    font-size: 23px;
+}
+
+.name {
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+.about {
+    font-size: 22px;
+}
+
+
+
+.moreabout {
+    font-size: 15px;
+}
+    .container1{
+        position: fixed;
+        left: 100px;
+        bottom: 80px;
+        
+    }
+   
+}
+
+
+/* sidebar class created for javascript */
+.sidebargo {
+    transform: translate(-243px, 0px);
+   
+
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 22px;
+
+}
+
+.cross {
+    margin-left: 125px;
+    margin-top: 0px;
+}
+
+
+/*  //////////////////////////////////////////////////////////////  contact page?/////////////////////////////////////// */
+.contactform {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 34px;
+    padding-top: 60px;
+    margin: 0 40px;
+
+}
+
+.contactform h1 {
+    padding: 20px;
+}
+
+.contactform div {
+    padding: 10px 10px;
+    margin-left: 0px;
+
+
+
+}
+
+.contactform #never {
+    font-size: 12px;
+    color: midnightblue;
+}
+
+.contactform form div input {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+#form-check {
+    display: flex;
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 25px;
+}
+
+.btn {
+    padding: 9px 14px;
+
+    cursor: pointer;
+    border-radius: 22px;
+    background-color: blueviolet;
+    color: white;
+    margin: 0 3px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+
+}
+
+/* //////////////////////////Blog page //////////////////////////////////////*/
+.blogcontainer {
+    margin: 0px 88px;
+    padding: 10px 0;
+}
+
+.blogcontainer div {
+    padding: 10px 0;
+}
+
+.blogitem {
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.blogitem h2{
+    padding: 24px 0px;
+    font-family: 'Merriweather', serif;
+
+}
+
+.blogcontainer h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 23px;
+}
+.btn1 a{
+    text-decoration: none;
+    background-color: salmon;
+    color: black;
+    padding: 1px 5px;
+}
+
+
+/* /////////////////////////////////////about me page ///////////////////*/
+.intro {
+    margin: 10px 88px;
+}
+.intro h1{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.intro h2 {
+    font-family: 'Poppins', sans-serif;
+    margin: 12px;
+}
+
+.intro p {
+    font-family: 'Poppins', sans-serif;
+    margin: 12px;
+
+}
+
+.skillcontainer {
+    padding: 15px;
+
+}
+
+.skill {
+    width: 293px;
+    height: 13px;
+    background-color: red;
+}
+
+.skill1 {
+    width: 220px;
+    height: 13px;
+    background-color: blue;
+}
+
+.skill2 {
+    width: 270px;
+    height: 13px;
+    background-color: purple;
+}
+
+.skill3 {
+    width: 180px;
+    height: 13px;
+    background-color: yellow;
+}
+
+/*            ////////////////////////////////services page */
